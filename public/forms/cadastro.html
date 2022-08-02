@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <title>ImpactaCar | Cadastro</title>
+  </head>
+  <body>
+    <section>
+      <h1>Formulário de Cadastro</h1>
+      <form action="doc-backend.php" method="get">
+        <fieldset>
+          <legend>Login</legend>
+          <div>
+            <div><label for="email">Email:</label></div>
+            <div><input required type="email" name="email" id="email" /></div>
+          </div>
+
+          <div>
+            <div><label for="senha">Senha:</label></div>
+            <div><input type="password" name="senha" id="senha" /></div>
+          </div>
+
+          <div>
+            <div><label for="confirmar-senha">Confirmar Senha:</label></div>
+            <div>
+              <input type="password" name="csenha" id="confirmar-senha" />
+            </div>
+          </div>
+        </fieldset>
+        <fieldset>
+          <legend>Dados Pessoais</legend>
+          <div>
+            <div><label for="nome">Nome:</label></div>
+            <div><input type="text" name="nome" id="nome" /></div>
+          </div>
+
+          <div>
+            <div><label for="idade">idade:</label></div>
+            <div><input type="number" name="idade" id="idade" /></div>
+          </div>
+
+          <div>
+            <div><label for="endereco">Endereço:</label></div>
+            <div><input type="text" id="endereco" name="endereco" placeholder="Digite seu Endereço" /></div>
+          </div>
+
+          <div>
+            <div>Estado Civil</div>
+            <div>
+              <input type="radio" id="casado" name="estado-civil" value="casado" />
+              <label for="casado">Casado</label>
+            </div>
+            <div>
+              <input type="radio" id="solteiro" name="estado-civil" value="solteiro"/>
+              <label for="solteiro">Solteiro</label>
+            </div>
+          </div>
+
+          <div>
+            <div>Cursos</div>
+            <div>
+              <input type="checkbox" id="mecanico" name="mecanico" value="mecanico" />
+              <label for="mecanico">Mecânico</label>
+            </div>
+            <div>
+              <input checked type="checkbox" id="engenheiro-eletrico" name="engenheiro-eletrico" value="eletrico"/>
+              <label for="engenheiro-eletrico">Engenheiro Eletrico</label>
+            </div>
+          </div>
+
+          <div>
+            <div><label for="estado">Estado:</label></div>
+            <div>
+              <select id="estado" name="estado">
+                <option value=""> -- Selecione -- </option>
+                <option value="SP" selected> São Paulo </option>
+                <option value="RJ"> Rio de Janeiro </option>
+              </select>
+            </div>
+          </div>
+
+          <div>
+            <div><label for="comentario">Comentário:</label></div>
+            <div>
+              <textarea 
+              placeholder="limite de 50 caracteres" 
+              maxlength="50" 
+              name="comentario" 
+              id="comentario" cols="50" rows="5"></textarea>
+              <div>limite de 50 caracteres</div>
+            </div>
+          </div>
+
+          <div>
+            <input type="color" name="cor-veiculo">
+          </div>
+
+        </fieldset>
+        <input type="submit" value="enviar" />
+      </form>
+    </section>
+  </body>
+</html>
