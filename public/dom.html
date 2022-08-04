@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dom</title>
+    <style>
+        .active {
+            border: red solid 1px;
+        }
+        ul {
+            list-style-type: none;
+        }
+        li {
+            border: black 1px solid;
+            padding: 6px;
+            width: 30%;
+        }
+    </style>
+</head>
+<body>
+    <h1>Method Fetch</h1>
+    <div class="pessoas"></div>
+
+    <hr>
+    Conteudo do body
+    <h1 class="email"></h1>
+    <ul class="ul-container">
+        <li class="l1"><img id='imagem' class="img" src="img/banana.svg" width="50"></li>
+        <li class="l2"><img src="img/bird.png" width="50"></li>
+    </ul>
+    <form>
+        <div class="error"></div>
+        <label for="nome"></label>
+        <input class="input-name" type="text" id="nome" name="nome">
+        <button class="busca-cep">Busca CEP</button>
+        <textarea id="txt" cols="50" rows="5"></textarea>
+        <div class="contar"></div>
+        <button class="btn">Clique Me</button>
+    </form>
+    <script src= "js/dom.js"></script>
+</body>
+</html>
